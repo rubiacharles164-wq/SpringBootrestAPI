@@ -1,0 +1,9 @@
+version: '3'
+services:
+  myapp-main:
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=JDBC:mysql://host.docker.internal:3306/CollegeWork
+      - spring.datasource.password=ChucksterMunkstor
+      - spring.datasource.username=root
